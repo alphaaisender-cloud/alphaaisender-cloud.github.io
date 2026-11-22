@@ -1,144 +1,119 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Breach & Trace — Cybercrime & Digital Investigations</title>
-  <style>
-    :root {
-      --bg: #0b0d10;
-      --surface: #13171d;
-      --border: #232a34;
-      --text: #e6edf3;
-      --muted: #8b949e;
-      --accent: #3b82f6;
-      --accent-hover: #60a5fa;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      padding: 40px 20px;
-    }
-    .container { max-width: 780px; margin: 0 auto; }
-    header {
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 28px;
-      margin-bottom: 32px;
-    }
-    .tag {
-      display: inline-block;
-      font-size: 12px;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 10px;
-      font-weight: 600;
-    }
-    h1 { font-size: 32px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 10px; }
-    .bio { color: var(--muted); font-size: 16px; max-width: 620px; }
-    .links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 22px;
-    }
-    .btn {
-      display: inline-block;
-      padding: 10px 18px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 600;
-      border: 1px solid var(--border);
-      background: var(--surface);
-      color: var(--text);
-      transition: 0.15s;
-    }
-    .btn:hover { border-color: var(--accent); color: var(--accent-hover); }
-    .btn-primary { background: var(--accent); border-color: var(--accent); color: #fff; }
-    .btn-primary:hover { background: var(--accent-hover); color: #fff; }
-    section { margin-bottom: 36px; }
-    h2 {
-      font-size: 18px;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--muted);
-      margin-bottom: 16px;
-    }
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 20px;
-      margin-bottom: 14px;
-    }
-    .card h3 { font-size: 18px; margin-bottom: 6px; }
-    .card p { color: var(--muted); font-size: 14px; margin-bottom: 12px; }
-    .source-list { list-style: none; font-size: 14px; }
-    .source-list li { margin-bottom: 6px; }
-    .source-list a { color: var(--accent-hover); text-decoration: none; }
-    .source-list a:hover { text-decoration: underline; }
-    footer {
-      border-top: 1px solid var(--border);
-      padding-top: 20px;
-      color: var(--muted);
-      font-size: 13px;
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Breach &amp; Trace — Scam &amp; Cybercrime Investigations (FBI &amp; Court Records)</title>
+<meta name="description" content="Documentary investigations into real scam and cybercrime cases — FBI alerts, Justice Department releases and court records — and exactly what to do so it never happens to you or your parents.">
+<link rel="canonical" href="https://alphaaisender-cloud.github.io/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta property="og:site_name" content="Breach &amp; Trace">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Breach &amp; Trace — Scam &amp; Cybercrime Investigations (FBI &amp; Court Records)">
+<meta property="og:description" content="Documentary investigations into real scam and cybercrime cases — FBI alerts, Justice Department releases and court records — and exactly what to do so it never happens to you or your parents.">
+<meta property="og:url" content="https://alphaaisender-cloud.github.io/">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0f14">
+
+<link rel="alternate" type="text/plain" title="llms.txt" href="https://alphaaisender-cloud.github.io/llms.txt">
+<style>:root{--bg:#0b0f14;--panel:#121821;--line:#1f2a36;--text:#e6edf3;--muted:#9aa7b4;--accent:#3fb950;--red:#f85149;--link:#58a6ff}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:880px;margin:0 auto;padding:0 16px}
+.top{border-bottom:1px solid var(--line);background:#0b0f14ee;position:sticky;top:0;z-index:5}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:58px;flex-wrap:wrap}
+.brand{color:var(--text);font-weight:800;letter-spacing:.3px;display:flex;align-items:center;gap:8px}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--red);box-shadow:0 0 10px var(--red)}
+nav{display:flex;gap:14px;align-items:center;flex-wrap:wrap;font-size:15px}nav a{color:var(--muted)}
+.btn{display:inline-block;background:var(--red);color:#fff!important;font-weight:700;padding:11px 18px;border-radius:8px;margin:4px 6px 4px 0}
+.btn:hover{text-decoration:none;filter:brightness(1.1)}
+.btn.sm{padding:7px 12px;font-size:14px;margin:0}
+.btn.ghost{background:transparent;border:1px solid var(--line);color:var(--text)!important}
+.hero{padding:56px 0 28px;border-bottom:1px solid var(--line);background:radial-gradient(ellipse at top,#132030 0,var(--bg) 70%)}
+.kicker{color:var(--accent);font:700 13px/1.4 ui-monospace,Consolas,monospace;text-transform:uppercase;letter-spacing:1.5px;margin:0 0 10px}
+h1{font-size:clamp(28px,5vw,42px);line-height:1.15;margin:0 0 16px}
+h2{font-size:24px;margin:40px 0 12px;border-top:1px solid var(--line);padding-top:24px}
+h2.caps{font-size:19px;letter-spacing:.5px;color:#f0b35a}
+h3{font-size:18px;margin:26px 0 8px}
+.lead{font-size:19px;color:var(--muted);max-width:720px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;color:var(--text);display:flex;flex-direction:column}
+.card:hover{border-color:#3a4a5c;text-decoration:none}
+.card img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block}
+.card .meta{color:var(--muted);font-size:13px;padding:10px 14px 0}
+.card strong{padding:4px 14px;line-height:1.35}
+.card .ex{color:var(--muted);font-size:14px;padding:4px 14px 14px;line-height:1.45}
+.case{padding-top:24px;padding-bottom:40px}
+.crumbs{font-size:14px;color:var(--muted)}
+.answer{background:var(--panel);border-left:4px solid var(--accent);padding:14px 18px;border-radius:6px;margin:18px 0}
+.answer .lbl{margin:0 0 4px;color:var(--accent);font:700 12px ui-monospace,Consolas,monospace;text-transform:uppercase;letter-spacing:1.5px}
+.answer p:last-child{margin:0}
+.video{position:relative;aspect-ratio:16/9;background:#000;border-radius:10px;overflow:hidden;margin:18px 0}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.chapters{list-style:none;padding:0}.chapters li{padding:6px 0;border-bottom:1px solid var(--line)}
+.chapters span{font-family:ui-monospace,Consolas,monospace;color:var(--accent);display:inline-block;min-width:56px}
+.facts{background:#1a1410;border:1px solid #3b2a1a;border-radius:10px;padding:4px 20px 12px;margin-top:30px}
+.facts h2{border:0;padding-top:10px;margin-top:10px;color:#f0b35a}
+.faq details{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:10px 16px;margin:10px 0}
+.faq summary{font-weight:700;cursor:pointer}.faq p{margin:8px 0 2px}
+.sources li{margin:6px 0;word-break:break-word}
+.cta-box{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 20px;margin:34px 0}
+.transcript p{color:#c9d3dc}
+.transcript h3 a{font-family:ui-monospace,Consolas,monospace;margin-right:6px}
+.small{font-size:13px;color:var(--muted)}
+.earlier li{margin:6px 0}
+.about ul li{margin:6px 0}
+footer{border-top:1px solid var(--line);margin-top:40px;padding:24px 0 40px;color:var(--muted);font-size:15px}
+@media (max-width:600px){body{font-size:16px}.hero{padding:36px 0 20px}nav a:not(.btn){display:none}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://alphaaisender-cloud.github.io/#org", "name": "Breach & Trace", "url": "https://alphaaisender-cloud.github.io/", "description": "Documentary investigations into real scam and cybercrime cases — FBI alerts, Justice Department releases and court records — and exactly what to do so it never happens to you or your parents.", "sameAs": ["https://www.youtube.com/@BreachAndTrace"], "founder": {"@type": "Person", "name": "Dimitri B.", "jobTitle": "Founder · Scam & Cybercrime Investigator"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "@id": "https://alphaaisender-cloud.github.io/#site", "name": "Breach & Trace", "url": "https://alphaaisender-cloud.github.io/", "publisher": {"@id": "https://alphaaisender-cloud.github.io/#org"}, "inLanguage": "en"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": 1, "url": "https://alphaaisender-cloud.github.io/cases/romance-scam-fbi-case/", "name": "Romance Scam: If Your Online Match Asks for This, It's Fake"}, {"@type": "ListItem", "position": 2, "url": "https://alphaaisender-cloud.github.io/cases/gta-6-pc-download-scam/", "name": "GTA 6 PS5 Emulator & PC Download: It's Fake — Here's What's Inside"}, {"@type": "ListItem", "position": 3, "url": "https://alphaaisender-cloud.github.io/cases/black-friday-fake-websites/", "name": "Black Friday Deals 2026 How Fake Websites Steal Your Card"}, {"@type": "ListItem", "position": 4, "url": "https://alphaaisender-cloud.github.io/cases/cia-officer-gold-bars-david-rush/", "name": "CIA Gold Bars: How One Officer Stole $194 Million With One Sentence"}, {"@type": "ListItem", "position": 5, "url": "https://alphaaisender-cloud.github.io/cases/spam-texts-fake-cell-towers/", "name": "Why Am I Getting So Many Spam Texts? Police Found Fake Cell Towers in Cars"}, {"@type": "ListItem", "position": 6, "url": "https://alphaaisender-cloud.github.io/cases/shinyhunters-arrested/", "name": "ShinyHunters Arrested: The Hacker Group That Hacked the FBI (Documentary)"}, {"@type": "ListItem", "position": 7, "url": "https://alphaaisender-cloud.github.io/cases/is-my-information-on-the-dark-web/", "name": "Is Your Information on the Dark Web? 153 Million IDs Were for Sale"}, {"@type": "ListItem", "position": 8, "url": "https://alphaaisender-cloud.github.io/cases/november-17-cyberattack-rumor/", "name": "November 17 \"Cyberattack\": Who Started It — and What's Actually Real"}, {"@type": "ListItem", "position": 9, "url": "https://alphaaisender-cloud.github.io/cases/binance-hack-fake-job-interview/", "name": "Binance Hacked: A Fake Job Interview and $6.3 Billion Gone in 20 Minutes"}]}</script>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <span class="tag">Official Channel Hub &amp; Case Files</span>
-      <h1>Breach &amp; Trace</h1>
-      <p class="bio">
-        Documentary investigations into cybercrime, banking malware, phishing operations, and viral internet hoaxes.
-      </p>
-      <div class="links">
-        <a class="btn btn-primary" href="https://www.youtube.com/@BreachAndTrace" target="_blank">YouTube Channel</a>
-        <a class="btn" href="mailto:contact@example.com">Sponsors &amp; Media Inquiries</a>
-      </div>
-    </header>
-
-    <section>
-      <h2>Episode Sources &amp; Archives</h2>
-
-      <div class="card">
-        <h3>Case #02 — Fact-Checking the November 17 Cyberattack Rumor</h3>
-        <p>Primary documents, official advisories, and timeline verification referenced in the episode.</p>
-        <ul class="source-list">
-          <li>• <a href="https://www.youtube.com/@BreachAndTrace" target="_blank">Watch Full Documentary on YouTube</a></li>
-          <li>• <a href="#" target="_blank">Archive Source Link #1 (Replace with URL)</a></li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Case #01 — The Dridex &amp; Bugat Banking Malware FBI Investigation</h3>
-        <p>Court filings, indictment records, and technical breakdown materials.</p>
-        <ul class="source-list">
-          <li>• <a href="https://www.youtube.com/@BreachAndTrace" target="_blank">Watch Full Documentary on YouTube</a></li>
-          <li>• <a href="#" target="_blank">Department of Justice Indictment Reference (Replace with URL)</a></li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <h2>Sponsorships &amp; Partnerships</h2>
-      <div class="card">
-        <h3>Work With Breach &amp; Trace</h3>
-        <p>
-          Audience focus: US, UK, Canada &amp; Australia. Available for dedicated segments, mid-roll integrations, and security tool reviews.
-        </p>
-        <a class="btn" href="mailto:contact@example.com">Request Media Kit</a>
-      </div>
-    </section>
-
-    <footer>
-      © 2026 Breach &amp; Trace. All primary sources archived for educational and journalistic reference.
-    </footer>
-  </div>
+<header class="top"><div class="wrap">
+<a class="brand" href="https://alphaaisender-cloud.github.io/"><span class="dot"></span>Breach &amp; Trace</a>
+<nav><a href="https://alphaaisender-cloud.github.io/#cases">Investigations</a><a href="https://alphaaisender-cloud.github.io/#about">About</a><a class="btn sm" href="https://www.youtube.com/@BreachAndTrace?sub_confirmation=1" rel="noopener" target="_blank">Subscribe on YouTube</a></nav>
+</div></header>
+<main>
+<section class="hero"><div class="wrap">
+<p class="kicker">Scam &amp; cybercrime investigations</p>
+<h1>Real cases. Real court records.<br>What to do before it happens to you.</h1>
+<p class="lead">Documentary investigations into real scam and cybercrime cases — FBI alerts, Justice Department releases and court records — and exactly what to do so it never happens to you or your parents.</p>
+<p class="ctas"><a class="btn" href="https://www.youtube.com/@BreachAndTrace?sub_confirmation=1" rel="noopener" target="_blank">Subscribe on YouTube</a> <a class="btn ghost" href="#cases">Browse investigations</a></p>
+</div></section>
+<section id="cases" class="wrap"><h2>Investigations</h2><div class="grid">
+<a class="card" href="https://alphaaisender-cloud.github.io/cases/romance-scam-fbi-case/"><img src="https://i.ytimg.com/vi/iMXpnxGZDvA/hqdefault.jpg" alt="Romance Scam: If Your Online Match Asks for This, It&#x27;s Fake" loading="lazy" width="480" height="360"><span class="meta">November 20, 2026 · 12:57</span><strong>Romance Scam: If Your Online Match Asks for This, It&#x27;s Fake</strong><span class="ex">Romance scam? If your online match asks you to move to WhatsApp, can never turn on the camera, and then needs money &quot;just until Friday&quot;, stop. That exact…</span></a>
+<a class="card" href="https://alphaaisender-cloud.github.io/cases/gta-6-pc-download-scam/"><img src="https://i.ytimg.com/vi/vtnE8j_-xT0/hqdefault.jpg" alt="GTA 6 PS5 Emulator &amp; PC Download: It&#x27;s Fake — Here&#x27;s What&#x27;s Inside" loading="lazy" width="480" height="360"><span class="meta">November 18, 2026 · 10:06</span><strong>GTA 6 PS5 Emulator &amp; PC Download: It&#x27;s Fake — Here&#x27;s What&#x27;s Inside</strong><span class="ex">GTA 6 PS5 emulator or PC download? It&#x27;s fake — there is no PC version of GTA 6, and no emulator runs it. Fake &quot;AnyPS5&quot; / &quot;KyTyPS5&quot; emulator downloads and GTA…</span></a>
+<a class="card" href="https://alphaaisender-cloud.github.io/cases/black-friday-fake-websites/"><img src="https://i.ytimg.com/vi/UVKnxYlXhm0/hqdefault.jpg" alt="Black Friday Deals 2026 How Fake Websites Steal Your Card" loading="lazy" width="480" height="360"><span class="meta">November 17, 2026 · 9:59</span><strong>Black Friday Deals 2026 How Fake Websites Steal Your Card</strong><span class="ex">Black Friday deals 2026 are everywhere — and so are fake websites built to steal your card. Researchers mapped more than 10,000 fake stores copying 166…</span></a>
+<a class="card" href="https://alphaaisender-cloud.github.io/cases/cia-officer-gold-bars-david-rush/"><img src="https://i.ytimg.com/vi/RxtUz9vWrfw/hqdefault.jpg" alt="CIA Gold Bars: How One Officer Stole $194 Million With One Sentence" loading="lazy" width="480" height="360"><span class="meta">November 15, 2026 · 12:41</span><strong>CIA Gold Bars: How One Officer Stole $194 Million With One Sentence</strong><span class="ex">CIA gold bars: 298 of them, found by the FBI in the Virginia home of a senior CIA officer. David Rush faked his résumé, invented a top-secret program that…</span></a>
+<a class="card" href="https://alphaaisender-cloud.github.io/cases/spam-texts-fake-cell-towers/"><img src="https://i.ytimg.com/vi/MA5hYCPByhU/hqdefault.jpg" alt="Why Am I Getting So Many Spam Texts? Police Found Fake Cell Towers in Cars" loading="lazy" width="480" height="360"><span class="meta">November 13, 2026 · 17:05</span><strong>Why Am I Getting So Many Spam Texts? Police Found Fake Cell Towers in Cars</strong><span class="ex">Why am I getting so many spam texts all of a sudden? Part of the answer: that text about an unpaid toll, a package or a &quot;fraud alert&quot; may not have come from…</span></a>
+<a class="card" href="https://alphaaisender-cloud.github.io/cases/shinyhunters-arrested/"><img src="https://i.ytimg.com/vi/wIm_-3YWz2k/hqdefault.jpg" alt="ShinyHunters Arrested: The Hacker Group That Hacked the FBI (Documentary)" loading="lazy" width="480" height="360"><span class="meta">November 11, 2026 · 16:38</span><strong>ShinyHunters Arrested: The Hacker Group That Hacked the FBI (Documentary)</strong><span class="ex">ShinyHunters arrested: the hacker group that hacked the FBI. . One week earlier, Dutch police had already arrested one of its alleged leaders. Within a…</span></a>
+<a class="card" href="https://alphaaisender-cloud.github.io/cases/is-my-information-on-the-dark-web/"><img src="https://i.ytimg.com/vi/H1E1BgsUEqY/hqdefault.jpg" alt="Is Your Information on the Dark Web? 153 Million IDs Were for Sale" loading="lazy" width="480" height="360"><span class="meta">November 9, 2026 · 15:33</span><strong>Is Your Information on the Dark Web? 153 Million IDs Were for Sale</strong><span class="ex">Is your information on the dark web? You handed your driver&#x27;s license across a rental car counter for two minutes. A year later, that exact scan — front…</span></a>
+<a class="card" href="https://alphaaisender-cloud.github.io/cases/november-17-cyberattack-rumor/"><img src="https://i.ytimg.com/vi/0LzfTwcbO9k/hqdefault.jpg" alt="November 17 &quot;Cyberattack&quot;: Who Started It — and What&#x27;s Actually Real" loading="lazy" width="480" height="360"><span class="meta">November 6, 2026 · 15:32</span><strong>November 17 &quot;Cyberattack&quot;: Who Started It — and What&#x27;s Actually Real</strong><span class="ex">What is happening on November 17, 2026? No November 17 cyber attack is scheduled. The only official November 17 alert is an emergency alert test on TV and…</span></a>
+<a class="card" href="https://alphaaisender-cloud.github.io/cases/binance-hack-fake-job-interview/"><img src="https://i.ytimg.com/vi/Rj35hhepZOU/hqdefault.jpg" alt="Binance Hacked: A Fake Job Interview and $6.3 Billion Gone in 20 Minutes" loading="lazy" width="480" height="360"><span class="meta">November 4, 2026 · 18:07</span><strong>Binance Hacked: A Fake Job Interview and $6.3 Billion Gone in 20 Minutes</strong><span class="ex">How was Binance hacked? In September, a Binance engineer was invited to a job interview. The company didn&#x27;t exist. The &quot;coding assignment&quot; was malware — and…</span></a>
+</div></section>
+<section class="wrap"><h2>Earlier episodes</h2><ul class="earlier"><li><a href="https://www.youtube.com/watch?v=uOLvQSPpYSc" rel="noopener" target="_blank">Maksim Yakubets Documentary: Evil Corp and the FBI&#x27;s $5 Million Reward</a></li><li><a href="https://www.youtube.com/watch?v=TAiLwxXSqDg" rel="noopener" target="_blank">CoinDCX Hack Explained: $16 Million Gone After a &quot;False Alarm&quot;</a></li><li><a href="https://www.youtube.com/watch?v=k89Ft74CdAo" rel="noopener" target="_blank">Crypto Hack 2026: How Hackers Stole $4.85 Million by Winning a Vote</a></li><li><a href="https://www.youtube.com/watch?v=a4hS0jewX3o" rel="noopener" target="_blank">NGRAVE Wallet Hacked? How a Phishing Attack Stole $2.65 Million</a></li><li><a href="https://www.youtube.com/watch?v=-qdT5l-ui6w" rel="noopener" target="_blank">ChatGPT Scam: A Fake Link From ChatGPT Cost Him $2.1 Million</a></li><li><a href="https://www.youtube.com/watch?v=0z1CvGWiS18" rel="noopener" target="_blank">Dridex Malware: How the FBI Caught an Evil Corp Hacker (&quot;Smilex&quot;)</a></li></ul></section>
+<section id="about" class="wrap about"><h2>About Breach &amp; Trace</h2>
+<p>Breach &amp; Trace investigates real fraud and cybercrime cases from the U.S., Canada, the U.K. and Australia: romance scams, fake websites, tech-support and &quot;federal agent&quot; calls, gold-bar couriers, hacked exchanges. We read the court filings, collect the official statements and real FBI recordings, and turn each case into a documentary — with a short checklist you can send to your family.</p>
+<h3>How we work</h3>
+<ul>
+<li>Every case starts from a primary source: FBI and IC3 alerts, U.S. Department of Justice press releases, court filings, police statements.</li>
+<li>Every fact on screen links to its source in the video description and on the case page.</li>
+<li>We show a scam only as far as you need to recognise and stop it — never how to commit it.</li>
+<li>Reconstructions are labelled RECONSTRUCTION. Narration uses AI voices; research, script and editing are assisted by Claude (Anthropic) and checked against the sources.</li>
+</ul>
+<p>Founder: <strong>Dimitri B.</strong>, Founder · Scam &amp; Cybercrime Investigator.</p>
+<h3>Report a scam</h3>
+<p>U.S.: <a href="https://www.ic3.gov" rel="noopener" target="_blank">ic3.gov</a> and <a href="https://reportfraud.ftc.gov" rel="noopener" target="_blank">reportfraud.ftc.gov</a> · U.K.: <a href="https://www.reportfraud.police.uk" rel="noopener" target="_blank">Report Fraud</a> · Canada: <a href="https://antifraudcentre-centreantifraude.ca" rel="noopener" target="_blank">Canadian Anti-Fraud Centre</a> · Australia: <a href="https://www.scamwatch.gov.au" rel="noopener" target="_blank">Scamwatch</a></p>
+</section>
+</main>
+<footer><div class="wrap">
+<p><strong>Breach &amp; Trace</strong> — documentary investigations into real scam and cybercrime cases, built on court records and official sources. New investigations every week on <a href="https://www.youtube.com/@BreachAndTrace" rel="noopener" target="_blank">YouTube</a>.</p>
+<p class="small">Not affiliated with the FBI, the U.S. Department of Justice or any agency. Information and education only; not legal or financial advice. People charged but not convicted are presumed innocent. © 2026 Breach &amp; Trace.</p>
+</div></footer>
 </body>
 </html>
